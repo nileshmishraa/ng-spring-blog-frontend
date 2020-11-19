@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { RegisterComponent } from './auth/register/register.component';
-import { LloginComponent } from './auth/login/llogin.component';
+import { LoginComponent } from './auth/login/login.component';
 import { RegisterSuccessComponent } from './auth/register-success/register-success.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {RouterModule} from '@angular/router';
@@ -16,7 +16,7 @@ import {HttpClientModule} from '@angular/common/http';
     AppComponent,
     HeaderComponent,
     RegisterComponent,
-    LloginComponent,
+    LoginComponent,
     RegisterSuccessComponent
   ],
   imports: [
@@ -27,7 +27,8 @@ import {HttpClientModule} from '@angular/common/http';
     HttpClientModule,
     RouterModule.forRoot([
       {path: 'register', component: RegisterComponent},
-      {path: 'login', component: LloginComponent}
+      {path: 'login', component: LoginComponent},
+      {path: 'register-success', component: RegisterSuccessComponent}
     ])
   ],
   providers: [],
